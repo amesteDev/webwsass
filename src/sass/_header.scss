@@ -9,7 +9,7 @@ nav {
 }
 
 //nesting
-.sidenav {
+.thenav {
     @include divborder($highlight);
     height: 50%;
     width: 0;
