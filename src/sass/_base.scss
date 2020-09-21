@@ -24,6 +24,7 @@ sans-serif;
     padding: 2em 0em;
 }
 
+//magic for the RGB/LED-like effect in the menu and buttons
 @keyframes circle-magic {
     @for $i from 1 through 360 {
         #{$i / 3.6 * 1%} {
