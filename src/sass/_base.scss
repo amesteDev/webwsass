@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans&display=swap');
+//variables
+$base-color: #111;
+$text-color: rgb(244,
+244,
+244);
+$darkcolor: #975600;
+$compcolor: #006196;
+$highlight:rgb(240,
+164,
+0);
+$bigfont: 'IBM Plex Sans',
+sans-serif;
+$smallfont: 'Open Sans',
+sans-serif;
+//mixins
+@mixin divborder($color) {
+    border-bottom: 1em solid $compcolor;
+    border-top: 1em solid $color;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 0.5em;
+    padding: 2em 0em;
+}
+
+@keyframes circle-magic {
+    @for $i from 1 through 360 {
+        #{$i / 3.6 * 1%} {
+            color: adjust-hue($color: $highlight, $degrees: $i)
+        }
+    }
+}
+
+@keyframes magic-border {
+    @for $i from 1 through 360 {
+        #{$i / 3.6 * 1%} {
+            border-color: adjust-hue($color: $highlight, $degrees: $i)
+        }
+    }
+}
+
+@mixin headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @content;
+    }
+}
+
+@mixin resp($size) {
+    @if $size==small {
+        @media (max-width: 700px) {
+            @content;
+        }
+    }
+    @else if $size==large {
+        @content;
+    }
+}
+
+.colorit {
+    animation: 10s infinite circle-magic;
+}
+
+.bordermagic {
+    animation: 10s infinite magic-border;
+}

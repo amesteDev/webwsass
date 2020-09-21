@@ -1,0 +1,10 @@
+/*
+Component filen: Här kan du lägga komponenter som kan återanvändas. Som till exempel knappar, länkar, textboxar m.m.
+*/
+
+@mixin button {
+    border: 6px solid;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}

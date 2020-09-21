@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>amhax.se</title>
+</head>
+
+<body>
+    <div class="maincontent">
+
+        <header>
+
+            <nav class="nav">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#" class="colorit">Startida</a>
+                    <a href="#" class="colorit">Färgerna</a>
+                    <a href="#" class="colorit">Ändras</a>
+                    <a href="#" class="colorit">Konstant</a>
+                    <a href="#" class="colorit">Lekstuga</a>
+                </div>
+                <p class="colorit"><span class="menu-button bordermagic" onclick="openNav()">MENY</span></p>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <h1>Testar SASS</h1>
+            <div class="left">
+                <p>Sidan är byggd med sass, html och lite javascript.
+                    <br /> Alla borde någon gång i sitt liv installera Linux på något vis. Här är en riktigt cool kille som har ett lasersvärd. Han gömmer också en hemlighet.</p>
+
+                <div class="card" id="card">
+                    <div class="front">
+                        <h3>Prova linux?</h3>
+                        <p class="colorit"><span class="button bordermagic" onclick="flipMe(card)">Flip!</span></p>
+                    </div>
+                    <div class="back">
+                        <h1>Manjaro Linux</h1>
+                        <a class="imglink" href="https://manjaro.org" target="_blank"><img class="manjimg" src="img/manj.png"></a>
+                        <p>Helt riktigt, klicka på logotypen för att komma till friheten.</p>
+                        <p class="colorit"><span class="button bordermagic" onclick="flipMe(card)">Flip!</span></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="right">
+                <p>Men jag tycker inte bara om Linux, jag läser också andra året till webbutvecklare vid Mittuniversitetet. Det är ungefär också det jag gör på fritiden, kodar saker, och har precis börjat intressera mig för så kallade <a href="https://dev.to/atan/what-is-ctf-and-how-to-get-started-3f04">CTFs</a>,
+                    utmaningar där man ska försöka ta sig in i en fiktiv server och hämta en "flagga".
+                </p>
+
+                <div class="card" id="card2">
+                    <div class="front2">
+                        <h3>Vad pratar han om?</h3>
+                        <p class="colorit"><span class="button bordermagic" onclick="flipMe(card2)">Flip!</span></p>
+                    </div>
+                    <div class="back">
+                        <h1>Kodhack!</h1>
+                        <a class="imglink" href="https://tryhackme.com/p/ameste" target="_blank"><img class="icon-img thm" src="img/thm.png" /></a>
+                        <br />
+                        <a class="imglink" href="https://github.com/amestedev" target="_blank"><img class="icon-img" src="img/github.png" /></a>
+
+                        <p class="colorit"><span class="button bordermagic" onclick="flipMe(card2)">Flip!</span></p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <p>All code by <a href="https://github.com/amesteDev">Morgan</a></p>
+        </footer>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+header {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+nav {
+    padding-top: 1em;
+}
+
+//nesting
+.sidenav {
+    @include divborder($highlight);
+    height: 50%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 1em;
+    transition: 0.5s;
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    /* Position and style the close button (top right corner) */
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}
+
+.menu-button {
+    @include button;
+}
