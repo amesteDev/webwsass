@@ -1,8 +1,3 @@
-/*
-Reset filen: Kan du lägga din kod för nollställning av CSS. 
-Kan vara bra att lägga i en egen partial eftersom det är kod du vanligvis inte ändrar för att separera från din resterande Sass-kod.
-*/
-
 *, *:before, *:after{
     box-sizing: border-box;
 }
